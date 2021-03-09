@@ -1,0 +1,41 @@
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\appsettings.json
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Proyecto promos.exe
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Proyecto promos.deps.json
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Proyecto promos.runtimeconfig.json
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Proyecto promos.runtimeconfig.dev.json
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Proyecto promos.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\ref\Proyecto promos.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Proyecto promos.pdb
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.csprojAssemblyReference.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.AssemblyInfo.cs
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\staticwebassets\Proyecto promos.StaticWebAssets.Manifest.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\staticwebassets\Proyecto promos.StaticWebAssets.xml
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\scopedcss\bundle\Proyecto promos.styles.css
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.RazorTargetAssemblyInfo.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.csproj.CopyComplete
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\ref\Proyecto promos.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.pdb
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\obj\Debug\net5.0\Proyecto promos.genruntimeconfig.cache
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\DnsClient.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\MongoDB.LibMongocrypt.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\usuario\source\repos\Proyecto promos\Proyecto promos\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll

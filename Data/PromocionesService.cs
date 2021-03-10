@@ -93,6 +93,8 @@ namespace Proyecto_promos.Data
             promo.Activo = true;
             if (ValidarSolapamiento(promo))
                 return "Ya hay una promocion con las mismas propiedades";
+            if (_promocionesCollection.Find(promo => true).ToList().Where(p => p.Id == promo.Id).Count() > 0)
+                return "Ya hay una promocion con este id";
             _promocionesCollection.InsertOne(promo);
             return promo.Id.ToString();
         }
@@ -113,6 +115,9 @@ namespace Proyecto_promos.Data
 
             if (promo.FechaDeInicio > promo.FechaDeFin)
                 return "La fecha de comienzo no puede ser mayor a la fecha de final.";
+
+            if (_promocionesCollection.Find(promo => true).ToList().Where(p => p.Id == promo.Id).Count() > 0)
+                return "Ya hay una promocion con este id";
 
             if (promo.Bancos != null && promo.Bancos.Count() > 0)
             {

@@ -39,12 +39,11 @@ namespace Proyecto_promos.Controllers
         public IActionResult GetPromocionesVigentesFiltradasPorFecha(string fechaDeComienzo, string fechaDeFinal)
         {
             DateTime fechadeComienzoParseada = DateTime.Parse(fechaDeComienzo);
-
             DateTime fechaDeFinalParseada = DateTime.Parse(fechaDeFinal);
             return Ok(_promocionesService.GetByVigency(fechadeComienzoParseada, fechaDeFinalParseada).Where(p => p.Activo));
         } 
 
-        [HttpGet("{id:length(36)}", Name = "GetPromocionesVigentesParaUnaVenta")]
+        [HttpGet("GetPromocionesVigentesParaUnaVenta", Name = "GetPromocionesVigentesParaUnaVenta")]
         public IActionResult GetPromocionesVigentesParaUnaVenta(string medioDePago, string banco, IEnumerable<string> categoriaDeProducto)
         {
             return Ok(_promocionesService.GetPromocionesVigentesParaUnaVenta(medioDePago, banco, categoriaDeProducto).Where(p => p.Activo));

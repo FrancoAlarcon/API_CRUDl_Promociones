@@ -29,9 +29,20 @@ namespace Proyecto_promos.Data
             return _promocionesCollection.Find(promo => true).ToList().Where(p => p.FechaDeInicio <= DateTime.Now && p.FechaDeFin >= DateTime.Now).ToList();
         }
 
-        public List<Promocion> GetPromocionesVigentesParaUnaVenta(string medioDePago, string banco, IEnumerable<string> categoriaDeProducto)
+        public List<Promocion> GetPromocionesVigentesParaUnaVenta(string medioDePago, string banco, IEnumerable<string> categoriasDeProductos)
         {
-            return _promocionesCollection.Find(promo => true).ToList().Where(p => p.Bancos.Any(b => b == banco) && p.MediosDePago.Any(b => b == medioDePago)).ToList();
+            var promocionesVigentesPorVenta = _promocionesCollection.Find(promo => true).ToList().Where(p => p.Activo && p.Bancos.Any(b => b == banco) && p.MediosDePago.Any(b => b == medioDePago)).ToList();
+            var promocionesVigentesPorVentaFiltradas = new List<Promocion>();
+
+            foreach (string categoriaDeProducto in categoriasDeProductos) 
+            {
+               var promocionesFiltradasPorCategoria = promocionesVigentesPorVenta.Where(p => p.CategoriasDeProductos.Any(p => p == categoriaDeProducto)).ToList();
+
+                foreach (var promocionFiltrada in promocionesFiltradasPorCategoria)
+                    promocionesVigentesPorVentaFiltradas.Add(promocionFiltrada);
+            }
+
+            return promocionesVigentesPorVenta;
         }
 
         public Promocion GetById(string id)

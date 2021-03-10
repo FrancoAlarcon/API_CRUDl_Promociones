@@ -32,8 +32,7 @@ namespace Proyecto_promos.Controllers
         public IActionResult GetPromocionesVigentes()
         {
             return Ok(_promocionesService.GetPromocionesVigentes().Where(p => p.Activo));
-        } 
-       // api/entity/{id:int}/{foo:length(5)}
+        }  
 
         [HttpGet("GetPromocionesVigentesFiltradasPorFecha/{fechaDeComienzo:length(10)}/{fechaDeFinal:length(10)}", Name = "GetPromocionesVigentesFiltradasPorFecha")]
         public IActionResult GetPromocionesVigentesFiltradasPorFecha(string fechaDeComienzo, string fechaDeFinal)
@@ -44,9 +43,9 @@ namespace Proyecto_promos.Controllers
         } 
 
         [HttpGet("GetPromocionesVigentesParaUnaVenta", Name = "GetPromocionesVigentesParaUnaVenta")]
-        public IActionResult GetPromocionesVigentesParaUnaVenta(string medioDePago, string banco, IEnumerable<string> categoriaDeProducto)
+        public IActionResult GetPromocionesVigentesParaUnaVenta(PromocionFilterDTO promocionFilterDTO)
         {
-            return Ok(_promocionesService.GetPromocionesVigentesParaUnaVenta(medioDePago, banco, categoriaDeProducto).Where(p => p.Activo));
+            return Ok(_promocionesService.GetPromocionesVigentesParaUnaVenta(promocionFilterDTO.MediosDePago, promocionFilterDTO.Bancos, promocionFilterDTO.CategoriasDeProductos).Where(p => p.Activo));
         }
 
         [HttpGet("{id:length(36)}", Name = "GetById")]
@@ -114,9 +113,12 @@ namespace Proyecto_promos.Controllers
             return Ok(result);
         }
 
-        [HttpPut("{id:length(36)}", Name = "UpdateVigencia")]
+        [HttpPut("UpdateVigencia/{id:length(36)}/{fechaDeComienzo:length(10)}/{fechaDeFinal:length(10)}", Name = "UpdateVigencia")]
         public IActionResult UpdateVigencia(string id, string fechaComienzo, string fechaFinal)
         {
+            if(DateTime.Parse(fechaComienzo) > DateTime.Parse(fechaFinal))
+                return Ok("La fecha de comienzo no puede ser mayor a la fecha de final");
+
             var result = _promocionesService.UpdateVigenciaDePromocion(id, DateTime.Parse(fechaComienzo), DateTime.Parse(fechaFinal));
 
             return Ok(result);
